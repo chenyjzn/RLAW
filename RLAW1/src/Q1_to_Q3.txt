@@ -1,0 +1,16 @@
+Q1
+a. Correct, id 為 Int
+b. ​Incorrect, 5.6 為 Double
+c. ​Correct, title 為 String
+d. ​Incorrect, String 不可為 null, String? 才可
+e. ​​Correct, number 可以是 556.6, 也可以是 null
+f. ​​Incorrect, list 可為 null, 但內容的 String 不行
+g. Correct, list & 內容的 String 可為 null, 也可為文字
+h. ​Correct, 如果 list 為不包含 null 的 type, 不過 list 為 null 會錯誤
+i. ​Correct, list 包含 null 的 type 也能動作
+
+Q2
+c
+
+Q3
+d
