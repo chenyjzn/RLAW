@@ -1,26 +1,26 @@
 
 open class Human(var name :String = "Fighter")
 {
-    open val mana:Boolean=false
+    open val hasMana:Boolean=false
     open fun attack()
     {
         println("$name use Fist Attack!")
     }
-    fun manacheck()
+    fun manaCheck()
     {
-        if(!mana)
-        {
-            println("$name is Muggle")
-        }
-        else
+        if(hasMana)
         {
             println("$name is Magician")
         }
+        else
+        {
+            println("$name is Muggle")
+        }
     }
 }
-class mage(anyname:String="Wizerd"):Human(anyname)
+class Mage(anyName:String="Wizerd"):Human(anyName)
 {
-    override val mana:Boolean=true
+    override val hasMana:Boolean=true
     override fun attack()
     {
         println("$name use Fireball!")
@@ -29,9 +29,9 @@ class mage(anyname:String="Wizerd"):Human(anyname)
 fun main()
 {
     var person1 = Human()
-    person1.manacheck()
+    person1.manaCheck()
     person1.attack()
-    var person2 = mage()
-    person2.manacheck()
+    var person2 = Mage()
+    person2.manaCheck()
     person2.attack()
 }

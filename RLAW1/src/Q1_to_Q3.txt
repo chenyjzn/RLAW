@@ -6,11 +6,13 @@ d. ​Incorrect, String 不可為 null, String? 才可
 e. ​​Correct, number 可以是 556.6, 也可以是 null
 f. ​​Incorrect, list 可為 null, 但內容的 String 不行
 g. Correct, list & 內容的 String 可為 null, 也可為文字
-h. ​Correct, 如果 list 為不包含 null 的 type, 不過 list 為 null 會錯誤
+h. ​Incorrect, list 在 List<String?>? 下可為 null, 要補上 list?.size
 i. ​Correct, list 包含 null 的 type 也能動作
 
 Q2
 c
+message 總共 39 個字, 因此執行 in 1..39 後 break
 
 Q3
 d
+array 存 6 個元素, 1000.0.pow(it) 代表元素為 1000.0 的 index 次方, 所以 array 為 (1000.0^0..1000.0^5 )
