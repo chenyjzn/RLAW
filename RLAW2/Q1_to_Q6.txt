@@ -1,0 +1,32 @@
+Q1:子 class 繼承父 class 的變數以及 function
+
+Q2:用 string 的 split function 將特定字元 or 字串分開
+fun main() {
+    var str:String = "10,;20,;30,;40,;50"
+    val parts = str.split(",;")
+    for(i in parts)
+        print("$i,")
+}
+Output:
+10,20,30,40,50,
+
+Q3:用 Map or MutableMap
+fun main() {
+    val dp: MutableMap<String, Int> = mutableMapOf<String, Int>("A" to 1,"B" to 2,"C" to 3)
+    dp["D"]=4
+    for(i in dp)
+        print("${i.key} is ${i.value}\n")
+}
+Output:
+A is 1
+B is 2
+C is 3
+D is 4
+
+Q4:
+ArreyList 在記憶體中資料是連續的, 會預先多取一個較大的記憶體空間
+LinkedList 在記憶體中資料可以不連續, 每筆資料會記錄前後資料的記憶體位址
+
+Q5:Byte, Short,Int,Long,Float,Double,Boolean
+
+Q6:INT_MAX=2^31 - 1, 避免撞邊可改用 Long 或 String
