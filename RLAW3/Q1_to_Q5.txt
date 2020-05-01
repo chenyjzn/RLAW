@@ -1,0 +1,24 @@
+Q1:將物件隱藏，外部要存取內容只能由設計者允許的方式存取
+
+Q2:一個emun class的變數只能為定義的型別中的其中一種，通常表示狀態時用
+
+Q3:
+enum class gameState{
+    INIT,
+    ACTIVE,
+    END,
+}
+
+fun main() {
+    var GameState=gameState.INIT
+    println(GameState)
+    GameState=gameState.ACTIVE
+    println(GameState)
+}
+Output:
+INIT
+ACTIVE
+
+Q4:LinearLayout​可以從上往下或從左往右依序安排物件、RelativeLayout物件的相對位置安排物件
+
+Q5:ConstraintLayout​可以根據物件的相對位置以及約束關係安排物件位置，較RelativeLayout直觀些
