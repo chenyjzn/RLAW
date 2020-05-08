@@ -1,0 +1,59 @@
+1. 多型是用單一操作介面，操作不同型態的物件。Overload、Template、Inheritance皆有Polymorphism的概念。
+2. 
+i.onCreate():
+當activity第一次開始時呼叫做initialized。只會呼叫一次，此時activity尚未visible。
+
+ii.onStart():
+當activity要visible時呼叫。當移出此activity再回來時都會被呼叫，可以被呼叫很多次。
+
+iii.onResume():
+當activity要可以保持focus時呼叫，此時使用者可以跟activity互動。
+
+iv.onPause():
+onResume的鏡像。當activity失去focus時呼叫，此時雖然activity還在畫面上，但使用者無法跟activity互動。
+
+v.onStop():
+onStart的鏡像。當activity移動到非visible時呼叫。
+
+vi.onDestroy():
+onCreate的鏡像。當activity要完全結束時呼叫。
+
+vii.onRestart():
+當activity不在畫面上但並未結束，重新回到這個activity後代替onCreate()被trigger.
+
+3.
+Jetpack是一套libraries、tools、guidance幫助開發者能夠更容易去創造開發者想要的apps，減少開發者花在寫boilerplate code上的時間並簡化複雜的任務。
+
+4.
+i.Activity:
+Activity提供開發者配置一個UI介面讓使用者與activity互動。
+
+ii.Service:
+Service是一個application component，不提供user介面並且可以在背景執行long-running operations。並且就算切到其他的application，service依舊能在背景執行。
+
+iii.Content Provider:
+Content provider是一個介面管理自身以及其他app所存的資料，並提供其他app共享數據的方式。Content provider會封裝數據，並提供定義數據安全性的機制。
+
+iv.Broadcast Receiver:
+是一種class接收從其他app或是系統發出的的broadcast intents。
+
+v.Notification:
+Notification是一個訊息顯示在app的UI之外提供使用者reminders, communication from other people, other timely information from your app。使用者可以透過notification to open your app or take an action directly from the notification.
+
+vi.Runtime Permission:
+授權是保護使用者隱私的機制。當app要使用一些敏感的個人資料時或是一些系統功能時就需要授權。而在Android 6.0 (API level 23)以上，以及app's targetSdkVersion 23以上，當app在運行需要用到一些危險的授權時，系統會告知使用者。在較舊版本的Android則是在app安裝時要求授權。
+
+vii.ANR:
+當UI許久沒回應時，會出現"Application Not Responding" (ANR)的錯誤。如果app在foreground，系統會給usr一個訊息讓user決定是否關閉app。
+
+viii.OOM:
+Out of memory。
+
+ix.Exception:
+當一些例外狀況發生時，可以丟出訊息讓開發者確認哪裡出錯。
+
+x.Material Design::
+是一種UI的設計方式，定義一些畫面、音效的呈現，讓使用者操作時有統一的體驗感。
+
+5.
+Coroutines是一個設計方式，將任務分頭進行，譬如將較長的任務跟主任務分開進行，避免主任務被這個較長的任務卡住。
